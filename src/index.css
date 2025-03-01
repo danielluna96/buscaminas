@@ -1,0 +1,68 @@
+:root[data-theme="light"] {
+  --background-color: #f0f2f5;
+  --text-color: #333;
+  --board-bg: #bbb;
+  --board-border: #999;
+  --cell-bg: #eee;
+  --cell-hover: #ddd;
+  --cell-revealed: #fff;
+  --header-bg: #eee;
+  --counter-bg: #000;
+  --counter-color: #ff0000;
+  --button-bg: #4CAF50;
+  --button-hover: #45a049;
+  --win-color: #4CAF50;
+  --lose-color: #f44336;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #242424;
+  --text-color: #fff;
+  --board-bg: #444;
+  --board-border: #666;
+  --cell-bg: #333;
+  --cell-hover: #555;
+  --cell-revealed: #2c2c2c;
+  --header-bg: #333;
+  --counter-bg: #1a1a1a;
+  --counter-color: #ff4444;
+  --button-bg: #2e7d32;
+  --button-hover: #1b5e20;
+  --win-color: #66bb6a;
+  --lose-color: #ef5350;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf') format('truetype');
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}

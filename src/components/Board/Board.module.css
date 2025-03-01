@@ -1,0 +1,92 @@
+.board {
+  display: inline-grid;
+  gap: 1px;
+  padding: 10px;
+  background: var(--board-bg);
+  border: 3px solid var(--board-border);
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header-bg);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: 'Digital', monospace;
+}
+
+.counter {
+  background: var(--counter-bg);
+  color: var(--counter-color);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 20px;
+  min-width: 60px;
+  text-align: right;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.difficultySelect {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--board-border);
+  background: var(--cell-revealed);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.themeToggle {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.themeToggle:hover {
+  background: var(--button-hover);
+}
+
+.newGameButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newGameButton:hover {
+  background: var(--button-hover);
+}
+
+.gameStatus {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.win {
+  color: var(--win-color);
+}
+
+.lose {
+  color: var(--lose-color);
+}
